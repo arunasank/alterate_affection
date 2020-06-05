@@ -1,0 +1,5 @@
+#This are the commands you need to run in root before running the notebook
+
+apt-get install -y libsm6 libxext6 libxrender-dev
+apt-get install libmagickwand-dev
+apt-get update
