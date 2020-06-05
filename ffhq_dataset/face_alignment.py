@@ -37,7 +37,7 @@ def image_align(src_file, dst_file, face_landmarks, output_size=1024, transform_
         c = eye_avg + eye_to_mouth * 0.1
         quad = np.stack([c - x - y, c - x + y, c + x + y, c + x - y])
         qsize = np.hypot(*x) * 2
-
+        prev_quad = quad.copy() #storing it for returning it
         # Load in-the-wild image.
         if not os.path.isfile(src_file):
             print('\nCannot find source image. Please run "--wilds" before "--align".')
@@ -82,3 +82,5 @@ def image_align(src_file, dst_file, face_landmarks, output_size=1024, transform_
 
         # Save aligned image.
         img.save(dst_file, 'PNG')
+ 
+        return prev_quad
