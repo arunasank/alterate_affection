@@ -1,0 +1,11 @@
+opencv-python
+Pillow
+requests
+matplotlib
+tensorflow-gpu==1.14
+Keras==2.3.1
+cmake
+dlib==19.18.0
+tqdm
+Wand
+moviepy
