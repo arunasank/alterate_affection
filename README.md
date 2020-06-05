@@ -1,11 +1,27 @@
-## alterate_affection  &mdash; a repurpose of [stylegan-encoder](https://github.com/Puzer/stylegan-encoder)
-
-# To change the affection of a video
+# alterate_affection  &mdash; a repurpose of [stylegan-encoder](https://github.com/Puzer/stylegan-encoder)
+This repository tries to use [`Puzer/stylegan-encoder`](https://github.com/Puzer/stylegan-encoder) to change 
+the affection of a video.
 
 ### Setup:
 
+1) Using a docker
+    * [shh into your remote server]()
+    * [Create a docker container and expose a port](): We will be using Jupyter Notebook, and therefore we need to expose a port from our docker container
+    * [Once created, enter as root]()
+    * Once you are in **root**, run the commands in [./preinstall.txt]
+    * Enter to with your username. This will take you to `/home/ralcanta`. Replace `ralcanta` with your username.
+    * `cd /u/ralcanta/`
+2) [Optional &mdash; but highly recommended] Working with Python virtual enviroments:
+    * [Create a virtual enviroment]()
+    * [Make that virtual enviroment accessible in your Jupyter Notebook]()
+    * [Activate your virtual enviroment]()
+3) [Start you Jupyter Notebook]()
+4) In your local computer, [connect your localhost to the exposed port in your remote servers]()
 
-### Working with a video
+### Working with a video:
+
+Now let the *fun* begin
+
 After the setup, we can work with the [general_video_processing notebook](./general_video_processing.ipynb)
 The notebook should be self explanatory, but in a general sense this is what happens:
 
