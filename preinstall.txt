@@ -2,4 +2,5 @@
 
 apt-get install -y libsm6 libxext6 libxrender-dev
 apt-get install libmagickwand-dev
+apt-get install ffmpeg  
 apt-get update
