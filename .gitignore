@@ -1,4 +1,18 @@
-/inputs/
-/outputs/
+# Most examples take from https://github.com/github/gitignore/blob/master/Python.gitignore
+
+# Byte-compiled 
+__pycache__/
+*.py[cod]
+*$py.class
+#Enviroments
+.env
+env/
+#Jupyter notebook
+.ipynb_checkpoints
+.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
+#Cache
+cache/
+
+#videos or frames generated
 /videos/
-/env_test/
