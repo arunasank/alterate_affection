@@ -67,19 +67,11 @@ def encode(src_dir,                 #Directory with images for encoding'
                 continue
 
         perceptual_model.set_reference_images(images_batch)
-#         op = perceptual_model.optimize(generator.dlatent_variable, iterations=iterations, learning_rate=lr)
-        for loss in tqdm(perceptual_model.optimize(generator.dlatent_variable, iterations=iterations, learning_rate=lr),
-                         total=iterations,
-                         desc = ' '.join(names)
-                        ):
-            final_loss = loss
-                         
-#         pbar = tqdm(op, leave=False, total=iterations)
-#         pbar.set_description(' '.join(names))
-#         for loss in pbar:
-# #             pbar.set_description(' '.join(names)+' Loss: %.2f' % loss)
-#               final_loss = loss
-        print(' '.join(names), ' loss:', final_loss)
+        op = perceptual_model.optimize(generator.dlatent_variable, iterations=iterations, learning_rate=lr)
+        pbar = tqdm(op, leave=False, total=iterations)
+        for loss in pbar:
+            pbar.set_description(' '.join(names)+' Loss: %.2f' % loss)
+        print(' '.join(names), ' loss:', loss)
 
         # Generate images from found dlatents and save them
         generated_images = generator.generate_images()
