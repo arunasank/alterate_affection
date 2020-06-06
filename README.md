@@ -1,8 +1,10 @@
 # alterate_affection  &mdash; a repurpose of [stylegan-encoder](https://github.com/Puzer/stylegan-encoder)
 This repository tries to use [`Puzer/stylegan-encoder`](https://github.com/Puzer/stylegan-encoder) to change 
-the affection of a video.
+the affection of a **video**.
 
 ### Setup:
+
+Note: You can see most (if not all) of this instructions [here](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5)
 
 1) Using a docker
     * [shh into your remote server](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#shh-into-your-remote-server)
@@ -12,8 +14,7 @@ the affection of a video.
     * Once you are in **root**, run the commands in [./preinstall.txt]
     * [Enter as yourself](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#enter-as-yourself). This will take you to `/home/ralcanta`. Replace `ralcanta` with your username.
     * `cd /u/ralcanta/`
-2) Go to the folder of your choice and clone this repository and `cd` into it.
-> git clone https://github.com/ralcant/alterate_affection.git
+2) Go to the folder of your choice and clone this repository and `cd` into it: `git clone https://github.com/ralcant/alterate_affection.git`
 3) [Optional &mdash; but highly recommended] Working with Python virtual enviroments:
     * [Create a virtual enviroment](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#create-a-virtual-enviroment)
     * [Activate your virtual enviroment](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#activate-your-virtual-enviroment). 
