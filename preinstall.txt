@@ -1,10 +1,5 @@
 #This are the commands you need to run in root before running the notebook
 
-
-apt-get install python3-venv
-apt-get install jupyter
-apt-get install git-all
-apt-get install -y libsm6 libxext6 libxrender-dev
-apt-get install libmagickwand-dev
-apt-get install ffmpeg  
 apt-get update
+apt-get install -y libsm6 libxext6 libxrender-dev libmagickwand-dev ffmpeg
+  

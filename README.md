@@ -5,19 +5,23 @@ the affection of a video.
 ### Setup:
 
 1) Using a docker
-    * [shh into your remote server]()
-    * [Create a docker container and expose a port](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#hello-this-is-a-test): We will be using Jupyter Notebook, and therefore we need to expose a port from our docker container
-    * [Once created, enter as root]()
+    * [shh into your remote server](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#shh-into-your-remote-server)
+    * [Create a docker container and expose a port](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#create-a-docker-container): We will be using Jupyter Notebook, and therefore we need to expose a port from our docker container
+    * [Once created, enter as root](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#enter-the-container)
+    * If this is the first time using this docker, [install some generally useful packages](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#if-first-time-install-some-useful-packages) and [create your user](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#create-your-user)
     * Once you are in **root**, run the commands in [./preinstall.txt]
-    * Enter to with your username. This will take you to `/home/ralcanta`. Replace `ralcanta` with your username.
+    * [Enter as yourself](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#enter-as-yourself). This will take you to `/home/ralcanta`. Replace `ralcanta` with your username.
     * `cd /u/ralcanta/`
-2) [Optional &mdash; but highly recommended] Working with Python virtual enviroments:
-    * [Create a virtual enviroment]()
-    * [Make that virtual enviroment accessible in your Jupyter Notebook]()
-    * [Activate your virtual enviroment]()
-3) [Start you Jupyter Notebook]()
-4) In your local computer, [connect your localhost to the exposed port in your remote servers]()
-5) Go to `localhost:8888`, and start working on the [general_video_processing notebook](./general_video_processing.ipynb)! If you are using a virtual enviroment, **Make sure to choose it as the kernel of your notebook**
+2) Go to the folder of your choice and clone this repository and `cd` into it.
+> git clone https://github.com/ralcant/alterate_affection.git
+3) [Optional &mdash; but highly recommended] Working with Python virtual enviroments:
+    * [Create a virtual enviroment](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#create-a-virtual-enviroment)
+    * [Activate your virtual enviroment](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#activate-your-virtual-enviroment). 
+    * [Make that virtual enviroment accessible in your Jupyter Notebook](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#make-that-virtual-enviroment-accessible-in-your-jupyter-notebook) 
+3) [Start you Jupyter Notebook in remote server](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#start-your-jupyter-notebook-in-your-remote-server)
+4) In your local computer, [create a ssh tunnel](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#creating-a-ssh-tunnel)
+5) [Access the jupyter notebook locally](https://gist.github.com/ralcant/7633cb0068a440f687bf4b75019fd5c5#access-the-jupyter-notebook-locally) and start working on the [general_video_processing notebook](./general_video_processing.ipynb)! If you are using a virtual enviroment, **Make sure to choose it as the kernel of your notebook** before running anything.
+
 ### Working with a video:
 
 Now let the *fun* begin!
